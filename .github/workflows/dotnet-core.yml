@@ -2,7 +2,8 @@ name: .NET Core
 
 on:
   push:
-    branches:   include:
+    branches:   
+    include:
     - master
     - releases/*
   pull_request:
