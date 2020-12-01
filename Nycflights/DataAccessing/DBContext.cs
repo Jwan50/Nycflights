@@ -26,6 +26,7 @@ namespace Nycflights.DataAccessing
             modelBuilder.Entity<Flight>()
                 .Property(f => f.FlightNumber).HasColumnName("Flight");
         }
+        // test jwan 1
 
     }
 }
