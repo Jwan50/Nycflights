@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jwan\\Desktop\\git\\Nycflights\\Nycflights\\Nycflights.csproj": {}
+    "C:\\Users\\45914\\Desktop\\SEP6\\Nycflights\\Nycflights\\Nycflights.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jwan\\Desktop\\git\\Nycflights\\Nycflights\\Nycflights.csproj": {
+    "C:\\Users\\45914\\Desktop\\SEP6\\Nycflights\\Nycflights\\Nycflights.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jwan\\Desktop\\git\\Nycflights\\Nycflights\\Nycflights.csproj",
+        "projectUniqueName": "C:\\Users\\45914\\Desktop\\SEP6\\Nycflights\\Nycflights\\Nycflights.csproj",
         "projectName": "Nycflights",
-        "projectPath": "C:\\Users\\Jwan\\Desktop\\git\\Nycflights\\Nycflights\\Nycflights.csproj",
-        "packagesPath": "C:\\Users\\Jwan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jwan\\Desktop\\git\\Nycflights\\Nycflights\\obj\\",
+        "projectPath": "C:\\Users\\45914\\Desktop\\SEP6\\Nycflights\\Nycflights\\Nycflights.csproj",
+        "packagesPath": "C:\\Users\\45914\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\45914\\Desktop\\SEP6\\Nycflights\\Nycflights\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Jwan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\45914\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,7 +26,6 @@
         },
         "frameworks": {
           "netcoreapp2.1": {
-            "targetAlias": "netcoreapp2.1",
             "projectReferences": {}
           }
         },
@@ -41,7 +37,6 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "targetAlias": "netcoreapp2.1",
           "dependencies": {
             "EntityFramework": {
               "target": "Package",
@@ -125,7 +120,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
