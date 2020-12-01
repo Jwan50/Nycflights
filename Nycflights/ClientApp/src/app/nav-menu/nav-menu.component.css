@@ -1,0 +1,37 @@
+li .glyphicon {
+  margin-right: 40px; /*how far the icon is far from text from right side*/
+  font-size: 30px;
+}
+
+/* Highlighting rules for nav menu items */
+li.link-active a,
+li.link-active a:hover,
+li.link-active a:focus {
+  background-color: #c78f87; /*color of highlighted and active bar in webpage*/
+  color: white;
+}
+
+/* Keep the nav menu independent of scrolling and on top of other items */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  margin-top: 0px; /* Add a top margin to avoid content overlay */
+  width: 100%; /* Full width */
+}
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+    /* Change background on mouse-over */
+    .navbar a:hover {
+      background: #ddd;
+      color: black;
+    }
+
