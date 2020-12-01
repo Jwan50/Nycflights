@@ -3,4 +3,13 @@
 Nycflights/obj/Debug/netcoreapp2.1/Nycflights.csprojAssemblyReference.cache
 *.cache
 *.cache
+<<<<<<< HEAD
 *.cache
+=======
+
+*.dll
+
+Nycflights/bin/Debug/netcoreapp2.1/
+
+Nycflights/obj/Debug/netcoreapp2.1/
+>>>>>>> 88dd6b79c077d18ed54049ebcfb5b7d709edec41
