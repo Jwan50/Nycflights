@@ -19,3 +19,11 @@ Nycflights/obj/Debug/netcoreapp2.1/
 *.cache
 
 .vs/Nycflight/DesignTimeBuild/.dtbcache.v2
+
+Nycflights/obj/Nycflights.csproj.nuget.dgspec.json
+
+*.cs
+
+Nycflights/obj/Nycflights.csproj.nuget.g.props
+
+Nycflights/obj/project.assets.json
