@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jwan\\Desktop\\SEP6Project\\Nycflights\\Nycflights\\Nycflights.csproj": {}
+    "C:\\Users\\Jwan\\Desktop\\git\\Nycflights\\Nycflights\\Nycflights.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jwan\\Desktop\\SEP6Project\\Nycflights\\Nycflights\\Nycflights.csproj": {
+    "C:\\Users\\Jwan\\Desktop\\git\\Nycflights\\Nycflights\\Nycflights.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jwan\\Desktop\\SEP6Project\\Nycflights\\Nycflights\\Nycflights.csproj",
+        "projectUniqueName": "C:\\Users\\Jwan\\Desktop\\git\\Nycflights\\Nycflights\\Nycflights.csproj",
         "projectName": "Nycflights",
-        "projectPath": "C:\\Users\\Jwan\\Desktop\\SEP6Project\\Nycflights\\Nycflights\\Nycflights.csproj",
+        "projectPath": "C:\\Users\\Jwan\\Desktop\\git\\Nycflights\\Nycflights\\Nycflights.csproj",
         "packagesPath": "C:\\Users\\Jwan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jwan\\Desktop\\SEP6Project\\Nycflights\\Nycflights\\obj\\",
+        "outputPath": "C:\\Users\\Jwan\\Desktop\\git\\Nycflights\\Nycflights\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

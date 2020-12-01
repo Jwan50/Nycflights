@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lk6s77vFc6vR8eHjKydTZmTJXpjEUWUDfzFAnG4Ei8UOm0h6TA/zq2XVUGQNoYw7K7nbJEYYsMgXVTE6NM9Ytg==",
+  "dgSpecHash": "M3BWSxK+Rr44tmY5Qv1I3+8LGUDVOkEEk6u7BWTOuHzfy27PxjE8zffINUfELBtNgA9aQKECpBo6/fWocJ1tAQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jwan\\Desktop\\SEP6Project\\Nycflights\\Nycflights\\Nycflights.csproj",
+  "projectFilePath": "C:\\Users\\Jwan\\Desktop\\git\\Nycflights\\Nycflights\\Nycflights.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jwan\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\Jwan\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
