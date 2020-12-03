@@ -42,6 +42,14 @@ namespace Nycflights.Controllers
                 .GroupBy(m => m).OrderBy(g => g.Key).ToDictionary(g => monthsByNumber[g.Key], g => g.Count());
         }
 
+        //2.2. GET: api/Nycflights/FlightsPerMonthForEWR
+        [HttpGet("[action]")]
+        public Dictionary<string, int> FlightsPerMonthForEWR()
+        {
+            return _context.Flights.Where(f => !string.IsNullOrEmpty(f.Origin) && f.Origin.Equals("EWR")).Select(f => f.Month).ToList()
+                .GroupBy(m => m).OrderBy(g => g.Key).ToDictionary(g => monthsByNumber[g.Key], g => g.Count());
+        }
+
 
 
     }
