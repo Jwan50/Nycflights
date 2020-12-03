@@ -33,8 +33,17 @@ namespace Nycflights.Controllers
             return _context.Flights.Select(f => f.Month).ToList().GroupBy(m => m).OrderBy(g => g.Key).ToDictionary(g => monthsByNumber[g.Key], g => g.Count());
         }
 
-        
-	
+
+        //2.1. GET: api/Nycflights/FlightsPerMonthForJFK
+        [HttpGet("[action]")]
+        public Dictionary<string, int> FlightsPerMonthForJFK()
+        {
+            return _context.Flights.Where(f => !string.IsNullOrEmpty(f.Origin) && f.Origin.Equals("JFK")).Select(f => f.Month).ToList()
+                .GroupBy(m => m).OrderBy(g => g.Key).ToDictionary(g => monthsByNumber[g.Key], g => g.Count());
+        }
+
+
+
     }
 }
 #endregion
