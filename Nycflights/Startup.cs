@@ -30,7 +30,7 @@ namespace Nycflights
                 configuration.RootPath = "ClientApp/dist";
             });
 
-            services.AddDbContext<DBContext>(options => options.UseMySql("server=35.205.16.130;database=flight;user=root;password=102030"));
+            services.AddDbContext<DBContext>(options => options.UseMySql("server=127.0.0.1;database=flight;user=root;password=102030"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
