@@ -61,7 +61,34 @@ namespace Nycflights.Controllers
         #endregion
 
 
+        #region Top ten destinations
+        //3.1. GET: api/Nycflights/FlightsToTopTenDestinations
+        [HttpGet("[action]")]
+        public Dictionary<string, int> FlightsToTopTenDestinations()
+        {
+            return _context.Flights.Select(f => f.Dest).ToList().GroupBy(d => d).ToDictionary(g => g.Key, g => g.Count())
+                .OrderByDescending(val => val.Value).Take(10).ToDictionary(g => g.Key, g => g.Value);
+        }
+
+        //3.2. GET: api/Nycflights/FlightsToTopTenDestinationsFromJFK
+        [HttpGet("[action]")]
+        public Dictionary<string, int> FlightsToTopTenDestinationsFromJFK()
+        {
+
+            List<string> topTenDestinations = _context.Flights.Select(f => f.Dest).ToList().GroupBy(d => d).ToDictionary(g => g.Key, g => g.Count())
+                .OrderByDescending(val => val.Value).Take(10).ToDictionary(g => g.Key, g => g.Value).Keys.ToList();
+
+            Dictionary<string, int> flightsToTopTenDestinationsFromJFK = new Dictionary<string, int>();
+            foreach (string dest in topTenDestinations)
+            {
+                flightsToTopTenDestinationsFromJFK.Add(dest, _context.Flights.Where(f => !string.IsNullOrEmpty(f.Origin) && f.Origin.Equals("JFK") &&
+                    !string.IsNullOrEmpty(f.Dest) && f.Dest.Equals(dest)).Count());
+            }
+
+            return flightsToTopTenDestinationsFromJFK;
+        }
 
 
     }
 }
+#endregion
