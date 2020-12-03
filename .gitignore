@@ -1,6 +1,7 @@
 
 .vs/Nycflight/v16/.suo
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 Nycflights/obj/Debug/netcoreapp2.1/Nycflights.csprojAssemblyReference.cache
 *.cache
@@ -27,3 +28,5 @@ Nycflights/obj/Nycflights.csproj.nuget.dgspec.json
 Nycflights/obj/Nycflights.csproj.nuget.g.props
 
 Nycflights/obj/project.assets.json
+=======
+>>>>>>> Diyar
