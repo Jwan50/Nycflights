@@ -1,0 +1,91 @@
+<!--Feature 11 - Manufacturers with more than 200 planes-->
+<p *ngIf="!moreThan200Manufa_Planes"><em>Loading...</em></p>
+
+<div class="row" style="margin-left: 60px;">
+  <div class="column">
+    <div class="card"
+         style=" box-sizing: border-box;
+         box-shadow: 0 16px 10px 0 #808080;
+         background-color: #f1f1f1;
+         height: 400px;
+         width: 710px;
+         margin-right: 25px;
+         float: left;">
+      <table class='table' *ngIf="moreThan200Manufa_Planes" style="    height: 300px;
+    width: 710px; margin: 10px 10px 10px 10px;">
+        <caption style="font-size: 20px; font-weight: bold">Table: Manufacturers with more than 200 planes</caption>
+        <thead>
+          <tr>
+            <th>Manufacturer</th>
+            <th>Number of planes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of moreThan200Manufa_Planes | getValues">
+            <td>{{ item.key }}</td>
+            <td>{{ item.val }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!--Feature 12 - Flights for manufacturers with more than 200 planes-->
+
+  <p *ngIf="!flights_MoreThan200_ManufaPlanes"><em>Loading...</em></p>
+  <div class="column">
+    <div class="card"
+         style=" box-sizing: border-box;
+         box-shadow: 0 16px 10px 0 #808080;
+         background-color: #f1f1f1;
+         height: 400px;
+         width: 710px;
+         margin-right: 25px;
+         float: left;">
+      <table class='table' *ngIf="flights_MoreThan200_ManufaPlanes" style="    height: 300px;
+    width: 710px; margin: 10px 10px 10px 10px;
+">
+        <caption style="font-size: 20px; font-weight: bold">Table: Flights for manufacturers with more than 200 planes</caption>
+        <thead>
+          <tr>
+            <th>Manufacturer</th>
+            <th>Number of flights responsible</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of flights_MoreThan200_ManufaPlanes | getValues">
+            <td>{{ item.key }}</td>
+            <td>{{ item.val }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!--Feature 13 - Planes for each Airbus Model-->
+<p *ngIf="!planesForEachAirbusModel"><em>Loading...</em></p>
+
+<div class="row" style="margin: 50px 50px 0px 50px;">
+  <div class="card" style="box-sizing: border-box;box-shadow: 0 16px 20px 0 #808080;background-color: #f1f1f1;
+    height: 200px; width:1460px; float: left;">
+    <div class="row" style="margin-left: 50px;">
+      <table class='table' *ngIf="planesForEachAirbusModel" style="margin: 10px 10px 10px 10px; ">
+        <caption style="font-size: 20px; font-weight: bold">Table: Number of planes for each Airbus Model</caption>
+        <thead>
+          <tr>
+            <th>Airbus Model</th>
+            <th>Number of planes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of planesForEachAirbusModel | getValues">
+            <td>{{ item.key }}</td>
+            <td>{{ item.val }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
