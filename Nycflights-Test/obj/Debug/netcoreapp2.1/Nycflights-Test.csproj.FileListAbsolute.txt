@@ -1,0 +1,17 @@
+C:\Users\Jwan\Desktop\SEP6-master\Nycflights-Project\Nycflights-Project-Test\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\Jwan\Desktop\SEP6-master\Nycflights-Project\Nycflights-Project-Test\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\Jwan\Desktop\SEP6-master\Nycflights-Project\Nycflights-Project-Test\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\Jwan\Desktop\SEP6-master\Nycflights-Project\Nycflights-Project-Test\bin\Debug\netcoreapp2.1\Nycflights-Project-Test.deps.json
+C:\Users\Jwan\Desktop\SEP6-master\Nycflights-Project\Nycflights-Project-Test\bin\Debug\netcoreapp2.1\Nycflights-Project-Test.dll
+C:\Users\Jwan\Desktop\SEP6-master\Nycflights-Project\Nycflights-Project-Test\bin\Debug\netcoreapp2.1\Nycflights-Project-Test.pdb
+C:\Users\Jwan\Desktop\SEP6-master\Nycflights-Project\Nycflights-Project-Test\obj\Debug\netcoreapp2.1\Nycflights-Project-Test.csprojAssemblyReference.cache
+C:\Users\Jwan\Desktop\SEP6-master\Nycflights-Project\Nycflights-Project-Test\obj\Debug\netcoreapp2.1\Nycflights-Project-Test.AssemblyInfoInputs.cache
+C:\Users\Jwan\Desktop\SEP6-master\Nycflights-Project\Nycflights-Project-Test\obj\Debug\netcoreapp2.1\Nycflights-Project-Test.AssemblyInfo.cs
+C:\Users\Jwan\Desktop\SEP6-master\Nycflights-Project\Nycflights-Project-Test\obj\Debug\netcoreapp2.1\Nycflights-Project-Test.csproj.CoreCompileInputs.cache
+C:\Users\Jwan\Desktop\SEP6-master\Nycflights-Project\Nycflights-Project-Test\obj\Debug\netcoreapp2.1\Nycflights-Project-Test.csproj.CopyComplete
+C:\Users\Jwan\Desktop\SEP6-master\Nycflights-Project\Nycflights-Project-Test\obj\Debug\netcoreapp2.1\Nycflights-Project-Test.dll
+C:\Users\Jwan\Desktop\SEP6-master\Nycflights-Project\Nycflights-Project-Test\obj\Debug\netcoreapp2.1\Nycflights-Project-Test.pdb
+C:\Users\Jwan\Desktop\SEP6-master\Nycflights-Project\Nycflights-Project-Test\bin\Debug\netcoreapp2.1\Nycflights.Views.dll
+C:\Users\Jwan\Desktop\SEP6-master\Nycflights-Project\Nycflights-Project-Test\bin\Debug\netcoreapp2.1\Nycflights.Views.pdb
+C:\Users\Jwan\Desktop\SEP6-master\Nycflights-Project\Nycflights-Project-Test\bin\Debug\netcoreapp2.1\Nycflights.dll
+C:\Users\Jwan\Desktop\SEP6-master\Nycflights-Project\Nycflights-Project-Test\bin\Debug\netcoreapp2.1\Nycflights.pdb
