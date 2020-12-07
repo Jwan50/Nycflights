@@ -9,7 +9,6 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { FlightsComponent, GetValuesPipe } from './flights/flights.component';
 import { PlanesComponent } from './planes/planes.component';
 import { WeatherComponent } from './weather/weather.component';
-import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +17,6 @@ import { MapComponent } from './map/map.component';
     FlightsComponent,
     WeatherComponent,
     PlanesComponent,
-    MapComponent,
     GetValuesPipe
   ],
   imports: [
@@ -29,7 +27,6 @@ import { MapComponent } from './map/map.component';
       { path: '', component: FlightsComponent, pathMatch: 'full' },
       { path: 'weather', component: WeatherComponent },
       { path: 'planes', component: PlanesComponent },
-      { path: 'map', component: MapComponent },
     ])
   ],
   providers: [GetValuesPipe],

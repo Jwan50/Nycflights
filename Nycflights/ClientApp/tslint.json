@@ -1,6 +1,8 @@
 {
+  "rulesDirectory": [
+    "node_modules/codelyzer"
+  ],
   "rules": {
-    "quotemark": [ false ], //"single", "avoid-escape"
     "arrow-return-shorthand": true,
     "callable-types": true,
     "class-name": true,
@@ -8,24 +10,10 @@
       true,
       "check-space"
     ],
-    "component-class-suffix": true,
-    "component-selector": [
-      true,
-      "element",
-      "app",
-      "kebab-case"
-    ],
     "curly": true,
     "deprecation": {
       "severity": "warn"
     },
-    "directive-class-suffix": true,
-    "directive-selector": [
-      true,
-      "attribute",
-      "app",
-      "camelCase"
-    ],
     "eofline": true,
     "forin": true,
     "import-blacklist": [
@@ -76,11 +64,8 @@
       true,
       "ignore-params"
     ],
-    "no-input-rename": true,
     "no-misused-new": true,
     "no-non-null-assertion": true,
-    "no-output-on-prefix": true,
-    "no-output-rename": true,
     "no-shadowed-variable": true,
     "no-string-literal": false,
     "no-string-throw": true,
@@ -91,6 +76,7 @@
     "no-use-before-declare": true,
     "no-var-keyword": true,
     "object-literal-sort-keys": false,
+    "tslint.autoFixOnSave": true,
     "one-line": [
       true,
       "check-open-brace",
@@ -99,7 +85,8 @@
       "check-whitespace"
     ],
     "prefer-const": true,
-
+    "quotemark": [false
+    ],
     "radix": true,
     "semicolon": [
       true,
@@ -109,7 +96,6 @@
       true,
       "allow-null-check"
     ],
-    "tslint.autoFixOnSave": true,
     "typedef-whitespace": [
       true,
       {
@@ -121,11 +107,6 @@
       }
     ],
     "unified-signatures": true,
-    "use-host-property-decorator": true,
-    "use-input-property-decorator": true,
-    "use-life-cycle-interface": true,
-    "use-output-property-decorator": true,
-    "use-pipe-transform-interface": true,
     "variable-name": false,
     "whitespace": [
       true,
@@ -134,9 +115,28 @@
       "check-operator",
       "check-separator",
       "check-type"
-    ]
-  },
-  "rulesDirectory": [
-    "node_modules/codelyzer"
-  ]
+    ],
+    "directive-selector": [
+      true,
+      "attribute",
+      "app",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "app",
+      "kebab-case"
+    ],
+    "no-output-on-prefix": true,
+    "use-input-property-decorator": true,
+    "use-output-property-decorator": true,
+    "use-host-property-decorator": true,
+    "no-input-rename": true,
+    "no-output-rename": true,
+    "use-life-cycle-interface": true,
+    "use-pipe-transform-interface": true,
+    "component-class-suffix": true,
+    "directive-class-suffix": true
+  }
 }

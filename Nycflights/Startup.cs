@@ -2,11 +2,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Nycflights.DataAccessing;
-
 
 namespace Nycflights
 {
@@ -24,13 +21,11 @@ namespace Nycflights
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            // In production, the Angular files will be served from this directory    
+            // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
                 configuration.RootPath = "ClientApp/dist";
             });
-
-            services.AddDbContext<DBContext>(options => options.UseMySQL("server=127.0.0.1;database=flight;user=root;password=102030"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
