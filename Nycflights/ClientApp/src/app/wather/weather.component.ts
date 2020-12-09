@@ -19,19 +19,19 @@ export class WeatherComponent implements AfterViewInit {
   }
 
   ngAfterViewInit() {
-    //Feature 9 - Weather observations for origins
+    // Feature 9 - Weather observations for origins
     this.loadWeather_Obs_forOrigins();
 
-    //Feature 6 - Temperature attributes for origins
+    // Feature 6 - Temperature attributes for origins
     this.loadTemperatureAttributesForOrigins();
 
-    //Feature 5 - Temperatures for JFK
+    // Feature 5 - Temperatures for JFK
     this.loadJFK_Celsius_temp();
 
-    //Feature 8 - Daily mean temperature for JFK
+    // Feature 8 - Daily mean temperature for JFK
     this.loadJFK_DailyMean_CelTemp();
 
-    //Feature 7 - Daily mean temperature for origins
+    // Feature 7 - Daily mean temperature for origins
     this.loadDailyMeanTemperatureForOrigins();
   }
 
@@ -88,7 +88,7 @@ export class WeatherComponent implements AfterViewInit {
     this.http.get<Map<Date, number>>(this.baseUrl + 'api/Nycflights/JFK_Celsius_temp').subscribe(result => {
 
       Object.keys(result).forEach(function (key) {
-        dataPointsJFK.push({ label: key, y: result[key] })
+        dataPointsJFK.push({ label: key, y: result[key] });
       });
 
       chart.render();
@@ -97,7 +97,7 @@ export class WeatherComponent implements AfterViewInit {
     this.http.get<Map<Date, number>>(this.baseUrl + 'api/Nycflights/EWR_Celsius_temp').subscribe(result => {
 
       Object.keys(result).forEach(function (key) {
-        dataPointsEWR.push({ label: key, y: result[key] })
+        dataPointsEWR.push({ label: key, y: result[key] });
       });
 
       chart.render();
@@ -106,7 +106,7 @@ export class WeatherComponent implements AfterViewInit {
     this.http.get<Map<Date, number>>(this.baseUrl + 'api/Nycflights/LGA_Celsius_temp').subscribe(result => {
 
       Object.keys(result).forEach(function (key) {
-        dataPointsLGA.push({ label: key, y: result[key] })
+        dataPointsLGA.push({ label: key, y: result[key] });
       });
 
       chart.render();
@@ -143,7 +143,7 @@ export class WeatherComponent implements AfterViewInit {
     this.http.get<Map<Date, number>>(this.baseUrl + 'api/Nycflights/JFK_Celsius_temp').subscribe(result => {
 
       Object.keys(result).forEach(function (key) {
-        dataPointsJFK.push({ label: key, y: result[key] })
+        dataPointsJFK.push({ label: key, y: result[key] });
       });
 
       chart.render();
@@ -180,7 +180,7 @@ export class WeatherComponent implements AfterViewInit {
     this.http.get<Map<string, number>>(this.baseUrl + 'api/Nycflights/JFK_DailyMean_CelTemp').subscribe(result => {
 
       Object.keys(result).forEach(function (key) {
-        dataPointsJFK.push({ label: key, y: result[key] })
+        dataPointsJFK.push({ label: key, y: result[key] });
       });
 
       chart.render();
@@ -234,7 +234,7 @@ export class WeatherComponent implements AfterViewInit {
     this.http.get<Map<string, number>>(this.baseUrl + 'api/Nycflights/JFK_DailyMean_CelTemp').subscribe(result => {
 
       Object.keys(result).forEach(function (key) {
-        dataPointsJFK.push({ label: key, y: result[key] })
+        dataPointsJFK.push({ label: key, y: result[key] });
       });
 
       chart.render();
@@ -243,7 +243,7 @@ export class WeatherComponent implements AfterViewInit {
     this.http.get<Map<string, number>>(this.baseUrl + 'api/Nycflights/EWR_DailyMean_CelTemp').subscribe(result => {
 
       Object.keys(result).forEach(function (key) {
-        dataPointsEWR.push({ label: key, y: result[key] })
+        dataPointsEWR.push({ label: key, y: result[key] });
       });
 
       chart.render();
@@ -252,7 +252,7 @@ export class WeatherComponent implements AfterViewInit {
     this.http.get<Map<string, number>>(this.baseUrl + 'api/Nycflights/LGA_DailyMean_CelTemp').subscribe(result => {
 
       Object.keys(result).forEach(function (key) {
-        dataPointsLGA.push({ label: key, y: result[key] })
+        dataPointsLGA.push({ label: key, y: result[key] });
       });
 
       chart.render();

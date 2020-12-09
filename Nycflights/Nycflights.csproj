@@ -35,27 +35,11 @@
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.1.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <!-- Don't publish the SPA source files, but do show them in the project files list -->
-    <Compile Remove="ClientApp\src\app\map\**" />
-    <Compile Remove="Pages\**" />
-    <Content Remove="$(SpaRoot)**" />
-    <Content Remove="ClientApp\src\app\map\**" />
-    <Content Remove="Pages\**" />
-    <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
-  </ItemGroup>
 
-  <ItemGroup>
-    <EmbeddedResource Remove="ClientApp\src\app\map\**" />
-    <EmbeddedResource Remove="Pages\**" />
-    <None Remove="ClientApp\src\app\map\**" />
-    <None Remove="Pages\**" />
-  </ItemGroup>
 
   <ItemGroup>
     <Folder Include="ClientApp\src\app\flights\" />
     <Folder Include="ClientApp\src\app\planes\" />
-    <Folder Include="ClientApp\src\app\weather\" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

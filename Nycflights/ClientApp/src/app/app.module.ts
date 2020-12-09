@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { FlightsComponent, GetValuesPipe } from './flights/flights.component';
 import { PlanesComponent } from './planes/planes.component';
-import { WeatherComponent } from './weather/weather.component';
+import { WeatherComponent } from './wather/weather.component';
 
 @NgModule({
   declarations: [
