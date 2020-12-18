@@ -1,0 +1,108 @@
+<!--Feature 5 - Temperatures for JFK-->
+<div class="row" style="margin-left: 50px;">
+  <div class="card"
+       style=" box-sizing: border-box;
+    box-shadow: 0 16px 20px 0 #808080;
+    background-color: #f1f1f1;
+    height: 400px;
+    width: 1450px;
+    float:initial;
+    margin:10px 10px 10px 10px;">
+
+    <div id="chartContainer7"
+         style="    height: 390px;
+      width: 1440px;
+      padding: 10px 10px 10px 10px;">
+    </div>
+  </div>
+</div>
+
+<!--Feature 6 - Temperature attributes for origins-->
+<div class="row" style="margin-left: 50px;">
+  <div class="card"
+       style=" box-sizing: border-box;
+    box-shadow: 0 16px 20px 0 #808080;
+    background-color: #f1f1f1;
+    height: 400px;
+    width: 1450px;
+    float:initial;
+    margin:10px 10px 10px 10px;">
+
+    <div id="chartContainer6"
+         style="    height: 390px;
+      width: 1440px;
+      padding: 10px 10px 10px 10px;
+      padding:10px 10px 10px 10px;">
+    </div>
+  </div>
+</div>
+
+<!--Feature 7 - Daily mean temperature for origins-->
+<div class="row" style="margin-left: 50px;">
+  <div class="card"
+       style=" box-sizing: border-box;
+    box-shadow: 0 16px 20px 0 #808080;
+    background-color: #f1f1f1;
+    height: 400px;
+    width: 1450px;
+    float:initial;
+    margin:10px 10px 10px 10px;">
+
+    <div id="chartContainer9"
+         style="height: 390px;
+      width: 1440px;
+      padding: 10px 10px 10px 10px;
+      padding:10px 10px 10px 10px;">
+
+    </div>
+  </div>
+</div>
+
+<!--Feature 8 - Daily mean temperature for JFK-->
+<div class="row" style="margin-left: 50px;">
+  <div class="card"
+       style=" box-sizing: border-box;
+    box-shadow: 0 16px 20px 0 #808080;
+    background-color: #f1f1f1;
+    height: 400px;
+    width: 1450px;
+    float:initial;
+    margin:10px 10px 10px 10px;">
+
+    <div id="chartContainer8"
+         style="height: 390px;
+      width: 1440px;
+      padding: 10px 10px 10px 10px;">
+
+    </div>
+  </div>
+</div>
+
+
+<!--Feature 9 - Weather observations for origins-->
+
+  <div class="card"
+    style=" box-sizing: border-box;
+    box-shadow: 0 16px 20px 0 #808080;
+    background-color: #f1f1f1;
+    height: 250px;
+    width: 1450px;
+    float:initial;
+    margin:10px 10px 10px 60px;">
+
+  <table class='table' *ngIf="weather_Obs_forOrigins" style="margin: 10px 10px 10px 15px; width: 1430px;">
+    <caption style="font-size: 25px; font-weight: bold">Table: Weather observations for origins </caption>
+    <thead>
+      <tr>
+        <th>Origin</th>
+        <th>Number of weather observations</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of weather_Obs_forOrigins | getValues">
+        <td>{{ item.key }}</td>
+        <td>{{ item.val }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

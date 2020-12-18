@@ -1,0 +1,166 @@
+<!--Feature 1 - Flights per month-->
+<div class="row" style="margin-left: 60px;">
+
+  <div class="column">
+    <div class="card"
+         style=" box-sizing: border-box;
+         box-shadow: 0 16px 10px 0 #808080;
+         background-color: #f1f1f1;
+         height: 400px;
+         width: 710px;
+         margin-right: 25px;
+         float: left;">
+
+      <div id="chartContainer1" style="height:300px; width: 710px;"></div>
+    </div>
+  </div>
+
+  <!--Feature 2 - Flights per month from origins-->
+  <div class="column">
+    <div class="card"
+         style=" box-sizing: border-box;
+         box-shadow: 0 16px 10px 0 #808080;
+         background-color: #f1f1f1;
+         height: 400px;
+         width: 710px;
+         margin-right: 25px;
+         float: left;">
+      <div id="chartContainer2Frequency" style="height:300px; width: 710px;"></div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row" style="margin-left: 60px;">
+  <div class="column">
+    <div class="card"
+         style="    margin-top: 50px;
+    box-sizing: border-box;
+    box-shadow: 0 16px 10px 0 #808080;
+    background-color: #f1f1f1;
+    height: 400px;
+    width: 710px;
+    float: left;
+    margin-right: 25px;">
+
+      <div id="chartContainer2Stacked" style="height:300px; width: 710px;"></div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card" style="    margin-top: 50px;
+    box-sizing: border-box;
+    box-shadow: 0 16px 20px 0 #808080;
+    background-color: #f1f1f1;
+    height: 400px;
+    width: 710px;
+    float: left;">
+      <div id="chartContainer2StackedPercentage" style="height: 300px; width: 710px;"></div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" style="margin-left: 50px;">
+  <div class="card"
+       style="    margin-top: 50px;
+    box-sizing: border-box;
+    box-shadow: 0 16px 20px 0 #808080;
+    background-color: #f1f1f1;
+    height: 400px;
+    width: 1460px;
+    float: left;
+    margin-right: 25px;">
+
+    <div id="chartContainer3" style=" height: 300px; width: 1450px;"></div>
+  </div>
+</div>
+
+<!--Feature 4 - Mean airtime for origins-->
+<div class="row" style="margin: 50px 0px 0px 50px;">
+  <div class="column">
+    <div class="card" style="box-sizing: border-box;box-shadow: 0 16px 20px 0 #808080;background-color: #f1f1f1;
+    height: 250px; width: 722px; float: left;">
+      <table class='table' *ngIf="Origins_MeanAirtime" style=" width: 650px; margin:10px 10px 10px 10px;">
+        <caption style="font-size: 25px; font-weight: bold">Table:Mean airtime for origins</caption>
+        <thead>
+          <tr>
+            <th>Origin</th>
+            <th>Mean airtime (hh:mm:ss)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of Origins_MeanAirtime | getValues">
+            <td>{{ item.key }}</td>
+            <td>{{ item.val }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!--Feature 10 - Mean departure and arrival delays for origins-->
+  <div class="column">
+    <div class="card" style="box-sizing: border-box;box-shadow: 0 16px 20px 0 #808080;background-color: #f1f1f1;
+    height: 250px; width: 717px;float: left; margin-left: 25px;">
+      <table class='table' *ngIf="JFK_Mean_Dep_Arr_delay && EWR_Mean_Dep_Arr_delay && LGA_Mean_Dep_Arr_delay"
+             style=" width: 650px; margin:10px 10px 10px 10px;">
+        <caption style="font-size: 25px; font-weight: bold">Table: Mean departure and arrival delays for origins</caption>
+        <thead>
+          <tr>
+            <th>Origin</th>
+            <th>Departure delay (hh:mm:ss)</th>
+            <th>Arrival delay (hh:mm:ss)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of JFK_Mean_Dep_Arr_delay | getValues">
+            <td>JFK</td>
+            <td>{{ item.key }}</td>
+            <td>{{ item.val }}</td>
+          </tr>
+
+          <tr *ngFor="let item of EWR_Mean_Dep_Arr_delay | getValues">
+            <td>EWR</td>
+            <td>{{ item.key }}</td>
+            <td>{{ item.val }}</td>
+          </tr>
+
+          <tr *ngFor="let item of LGA_Mean_Dep_Arr_delay | getValues">
+            <td>LGA</td>
+            <td>{{ item.key }}</td>
+            <td>{{ item.val }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<!--Feature 3 - Top 10 destinations-->
+
+<div class="row" style="margin: 50px 50px 0px 50px;">
+  <div class="card" style="box-sizing: border-box;box-shadow: 0 16px 20px 0 #808080;background-color: #f1f1f1;
+    height: 500px; width:1460px; float: left;">
+    <div class="row" style="margin-left: 50px;">
+
+      <table class='table' *ngIf="topTenDestFlights" style=" width: 1450px; margin:10px 10px 10px 10px;">
+        <caption style="font-size: 25px; font-weight: bold">Table:Number of flights to top 10 destinations</caption>
+        <thead>
+          <tr>
+            <th>Destination</th>
+            <th>Number of flights</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of topTenDestFlights | getValues">
+            <td>{{ item.key }}</td>
+            <td>{{ item.val }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
